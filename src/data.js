@@ -1,45 +1,37 @@
-import james from '../assets/james.png'
-import wint3 from '../assets/wint3.png'
+import james from './assets/james.png'
+import wint3 from './assets/wint3.png'
 
 const data = [
   {
     id: 0,
-    img: <img src={james} alt='james' />,
-    link: <a href='https://jamesoseland.com'></a>,
-    copy: (
-      <h3>
-        <strong>James Oseland's World Food</strong> is James' website for his
-        new book series.
-        <ul>
-          <li>Incorporates Mailchimp for newsletter signup.</li>
-          <li>
-            Renders two Carousels: one built from scratch, the other using a
-            library.
-          </li>
-          <li>
-            Displays a React frontend with CSS grid and flexbox, being
-            responsive.
-          </li>
-        </ul>
-      </h3>
-    ),
+    src: `${james}`,
+    link: 'https://jamesoseland.com',
+    copy: [
+      "James Oseland's World Food",
+      "is James' website for his new book series.",
+      'Incorporates Mailchimp for newsletter signup.',
+      'Renders two Carousels: one built from scratch, the other using a library.',
+      'Displays a React frontend with CSS grid and flexbox, being responsive.',
+    ],
+    frontendLink: 'https://github.com/cynthiaeddy/jim-wf',
+    backendLink: null,
   },
   {
     id: 1,
-    img: <img src={wint3} className='project-solo' alt='painting' />,
-    link: <a href='https://earth-paints.netlify.app'></a>,
-    copy: (
-      <h3>
-        <strong>Earth Paints</strong> is an app to discover images that Google
-        Earth takes from afar.
-        <ul>
-          <li>Implements Lazyload for faster rendering in mobile.</li>
-          <li>Incorporates a searchbar where users can search by Country.</li>
-          <li>React frontend styled with CSS and Semantic-ui-React. </li>
-          <li>Fetches data from the Rails API using Javascript.</li>
-        </ul>
-      </h3>
-    ),
+    img: `${wint3}`,
+    link: 'https://earth-paints.netlify.app',
+    copy: 'Earth Paints is an app to discover images that Google Earth takes from afar. Implements Lazyload for faster rendering in mobile. Incorporates a searchbar where users can search by Country. React frontend styled with CSS and Semantic-ui-React.Fetches data from the Rails API using Javascript.',
+    frontendLink: 'https://github.com/cynthiaeddy/google-earth-client',
+    backendLink: 'https://github.com/cynthiaeddy/google-earth-api',
+  },
+
+  {
+    id: 2,
+    src: `${james}`,
+    link: 'https://jamesoseland.com',
+    copy: "James Oseland's World Food is James' website for his new book series. Incorporates Mailchimp for newsletter signup. Renders two Carousels: one built from scratch, the other using a library. Displays a React frontend with CSS grid and flexbox, being responsive.",
+    frontendLink: 'https://github.com/cynthiaeddy/jim-wf',
+    backendLink: null,
   },
 ]
 export default data
