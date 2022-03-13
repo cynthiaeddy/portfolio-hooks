@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ProjectMain from '../ProjectMain'
+import Projects from '../Projects'
 import Splash from './Splash'
 
 const SplashScreen = () => {
@@ -27,7 +27,7 @@ const SplashScreen = () => {
     setTimePassed(true)
   }
 
-  return !timePassed ? <Splash /> : <ProjectMain />
-  // return !timePassed && !isMobile ? <Splash /> : <ProjectMain />
+  return !timePassed ? <Splash /> : <Projects />
+  // return !timePassed && !isMobile ? <Splash /> : <Projects />
 }
 export default SplashScreen
