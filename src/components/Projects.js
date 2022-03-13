@@ -3,8 +3,8 @@ import ProjectSolo from './ProjectSolo'
 const Projects = () => {
   return (
     <>
-      in project main
-      <ProjectSolo />
+      {/* in project main
+      <ProjectSolo /> */}
     </>
   )
 }
