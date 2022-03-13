@@ -1,44 +1,35 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import ProjectMain from '../ProjectMain'
 import Splash from './Splash'
 
-class SplashScreen extends React.Component {
-  constructor(props) {
-    super(props)
+const SplashScreen = () => {
+  const [width, setWidth] = useState(window.innerWidth)
+  const [timePassed, setTimePassed] = useState(false)
+  let isMobile
+  width <= 600 ? (isMobile = true) : (isMobile = false)
 
-    this.state = {
-      width: window.innerWidth,
-      timePassed: false,
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange)
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange)
     setTimeout(() => {
-      this.setTimePassed()
+      hasTimePassed()
     }, 5000)
+
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange)
+    }
+  }, [])
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth)
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange)
+  const hasTimePassed = () => {
+    setTimePassed(true)
   }
 
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth })
-  }
+  return !timePassed ? <Splash /> : <ProjectMain />
+  // return !this.state.timePassed && !isMobile ? <Splash /> : <ProjectMain />
 
-  setTimePassed() {
-    this.setState({
-      timePassed: true,
-    })
-  }
-
-  render() {
-    let isMobile
-    let width = this.state.width
-    width <= 600 ? (isMobile = true) : (isMobile = false)
-
-    return !this.state.timePassed && !isMobile ? <Splash /> : <ProjectMain />
-  }
+  // }
 }
 export default SplashScreen
