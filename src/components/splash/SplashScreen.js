@@ -10,11 +10,11 @@ const SplashScreen = () => {
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange)
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       hasTimePassed()
     }, 5000)
-
     return () => {
+      clearTimeout(timer)
       window.removeEventListener('resize', handleWindowSizeChange)
     }
   }, [])
@@ -28,8 +28,6 @@ const SplashScreen = () => {
   }
 
   return !timePassed ? <Splash /> : <ProjectMain />
-  // return !this.state.timePassed && !isMobile ? <Splash /> : <ProjectMain />
-
-  // }
+  // return !timePassed && !isMobile ? <Splash /> : <ProjectMain />
 }
 export default SplashScreen

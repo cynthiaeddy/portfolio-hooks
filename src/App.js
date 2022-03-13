@@ -1,9 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
 import './App.css'
-import './stylesheets/logo.css'
-import './stylesheets/myLogoRoll.css'
-import swirl_sm from './assets/swirl_sm.jpg'
 import SplashScreen from './components/splash/SplashScreen'
 
 function App() {

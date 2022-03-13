@@ -1,17 +1,15 @@
-.home-image {
+.splash-image {
   height: 100vh;
   width: 100vh;
   background-color: white;
   position: fixed;
-  z-index: 110;
-  top: 0;
+  z-index: 10;
+  top: 40%;
   left: 0;
   border: none;
 }
-.home-image .aside.logo {
-  width: 100vw;
-}
-.homeLogo .swirl {
+
+.splash-logo .swirl {
   display: block;
   position: absolute;
   border-radius: 50%;
@@ -112,7 +110,6 @@
 
 @media (max-width: 770px) {
   .homeLogo .swirl {
-    /* animation: move-left 4.8s ease-in infinite, spin 1.5s linear infinite; */
     animation: spin 900ms linear infinite, move-left 4.8s linear infinite;
   }
 
