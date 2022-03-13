@@ -13,7 +13,7 @@ const data = [
     title: 'worldfood',
     link: 'https://jamesoseland.com',
     copy: [
-      "James Oseland's World Food",
+      "James Oseland's World Food ",
       "is James' website for his new book series.",
       [
         'Incorporates Mailchimp for newsletter signup.',
@@ -29,7 +29,7 @@ const data = [
     title: 'earthpaints',
     link: 'https://earth-paints.netlify.app',
     copy: [
-      'Earth Paints',
+      'Earth Paints ',
       'is an app to discover images that Google Earth takes from afar.',
       [
         'Implements Lazyload for faster rendering in mobile.',
@@ -47,7 +47,7 @@ const data = [
     title: 'doorescape',
     link: 'https://white-door-escape.netlify.app',
     copy: [
-      'The White Door Escape',
+      'The White Door Escape ',
       'is a simple escape game.',
       ['Built with React Hooks and CSS.'],
     ],
@@ -59,7 +59,7 @@ const data = [
     title: 'brooklynmuseumproject',
     link: 'https://brooklyn-museum.herokuapp.com',
     copy: [
-      'The Brooklyn Museum Project',
+      'The Brooklyn Museum Project ',
       'is a simple escape game.',
       'Built with React Hooks and CSS.',
     ],
@@ -72,7 +72,7 @@ const data = [
     title: 'adoptapet',
     link: 'https://adopt-a-pet.netlify.app',
     copy: [
-      'Adopt A Pet',
+      'Adopt A Pet ',
       'is an app for adopting/maintaining a virtual pet without the upkeep of a live one.',
       [
         'Persists each user to a Postgres database.',
@@ -89,7 +89,7 @@ const data = [
     title: 'matchgame',
     link: 'https://match-car-game.netlify.app',
     copy: [
-      'Match Game',
+      'Match Game ',
       'is a memory game.',
       [
         'Click on one card, then another. If cars match, the cards stay revealed.',
@@ -105,7 +105,7 @@ const data = [
     title: 'comeonkayak',
     link: 'https://come-on-kayak.netlify.app',
     copy: [
-      'Come On Kayak',
+      'Come On Kayak ',
       'is an app for kayakers to make comments on trips and create upcoming trips.',
       [
         'Persists data to a Rails database and provides a Rails API.',
@@ -121,7 +121,7 @@ const data = [
     title: 'colorpicksimon',
     link: 'https://colorpicksimon.netlify.app',
     copy: [
-      'Color Pick Simon',
+      'Color Pick Simon ',
       'is variation of my childhood game.',
       [
         'Player vs Simon(computer). Simon picks one color, Player matches. Simon adds one color to each successful sequence.',

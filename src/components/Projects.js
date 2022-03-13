@@ -7,7 +7,11 @@ import '../stylesheets/Projects.css'
 const Projects = () => {
   const card = data.map((project, idx) => (
     <Link to={`/projects/${project.title}`} className='link' key={idx}>
-      <img src={project.img} alt='' className='project-card' />
+      <img
+        src={project.img}
+        alt=''
+        className={`project-card ${project.title}`}
+      />
     </Link>
   ))
 
