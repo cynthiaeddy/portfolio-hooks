@@ -10,6 +10,7 @@ import simon2 from './assets/simon2.jpg'
 const data = [
   {
     img: `${james}`,
+    title: 'worldfood',
     link: 'https://jamesoseland.com',
     copy: [
       "James Oseland's World Food",
@@ -25,6 +26,7 @@ const data = [
   },
   {
     img: `${wint3}`,
+    title: 'earthpaints',
     link: 'https://earth-paints.netlify.app',
     copy: [
       'Earth Paints',
@@ -42,6 +44,7 @@ const data = [
 
   {
     img: `${whiteDoor1}`,
+    title: 'doorescape',
     link: 'https://white-door-escape.netlify.app',
     copy: [
       'The White Door Escape',
@@ -53,6 +56,7 @@ const data = [
   },
   {
     img: `${museum}`,
+    title: 'brooklynmuseumproject',
     link: 'https://brooklyn-museum.herokuapp.com',
     copy: [
       'The Brooklyn Museum Project',
@@ -65,6 +69,7 @@ const data = [
   },
   {
     img: `${pets}`,
+    title: 'adoptapet',
     link: 'https://adopt-a-pet.netlify.app',
     copy: [
       'Adopt A Pet',
@@ -81,6 +86,7 @@ const data = [
   },
   {
     img: `${match_gamealt3}`,
+    title: 'matchgame',
     link: 'https://match-car-game.netlify.app',
     copy: [
       'Match Game',
@@ -96,6 +102,7 @@ const data = [
   },
   {
     img: `${kayaksWh2}`,
+    title: 'comeonkayak',
     link: 'https://come-on-kayak.netlify.app',
     copy: [
       'Come On Kayak',
@@ -111,6 +118,7 @@ const data = [
   },
   {
     img: `${simon2}`,
+    title: 'colorpicksimon',
     link: 'https://colorpicksimon.netlify.app',
     copy: [
       'Color Pick Simon',

@@ -4,8 +4,10 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
   overflow: auto;
 }
+
 .cards.cards-container#me-container {
   grid-template-columns: 1fr;
 }
@@ -30,7 +32,7 @@
 .project-solo.escape {
   border: 1px solid grey;
 }
-img.project-solo {
+.project-solo {
   text-align: left;
   letter-spacing: 1px;
   width: 100%;
@@ -42,29 +44,28 @@ img.project-solo {
   margin-bottom: 20px;
 }
 
-img.project-card {
+.project-card {
   width: 100%;
-  margin-bottom: 15px;
+  height: 100%;
 }
 .project-card.door {
   border: 1px solid grey;
 }
 
-img.project-card:hover,
-img.project-solo:hover {
+.project-card:hover,
+.project-solo:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-img.project-card.pets:hover {
+.project-card:hover {
+  background: grey;
+}
+.project-card.pets:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 .icons {
   display: flex;
   justify-content: center;
-}
-
-a {
-  margin: 0 10px;
 }
 
 .fas,
@@ -107,8 +108,22 @@ ul {
     width: 80%;
   }
 }
+@media (max-width: 1199px) {
+  .cards {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .cards {
+    width: 60%;
+    grid-template-columns: 1fr;
+  }
+  .cards.cards-container {
+    margin-left: 20%;
+  }
+}
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   .icons {
     margin: 0 10px;
     margin-bottom: -30px;
@@ -119,12 +134,16 @@ ul {
     height: fit-content;
     padding-bottom: 50px;
   }
-  img.project-card {
+  .project-card {
     width: 100%;
     height: inherit;
   }
 
-  img.project-solo {
+  .cards.cards-container {
+    margin-left: 10%;
+  }
+
+  .project-solo {
     margin-top: -30px;
   }
 

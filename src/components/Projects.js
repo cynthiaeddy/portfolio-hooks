@@ -5,8 +5,8 @@ import museum from '../assets/museum.jpg'
 import '../stylesheets/Projects.css'
 
 const Projects = () => {
-  const card = data.map(project => (
-    <Link to={'#'} className='link'>
+  const card = data.map((project, idx) => (
+    <Link to={`/projects/${project.title}`} className='link' key={idx}>
       <img src={project.img} alt='' className='project-card' />
     </Link>
   ))

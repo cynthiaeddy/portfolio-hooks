@@ -1,12 +1,14 @@
 import React from 'react'
 import data from '../data'
+import { useParams } from 'react-router'
 
-const ProjectSolo = props => {
-  console.log('in project solo', props)
+const ProjectSolo = () => {
+  const { title } = useParams()
+  console.log(title)
 
   return (
     <>
-      <div className='inner-card'>
+      {/* <div className='inner-card'>
         <a href={props.link}>
           <img src={props.img} className='project-soloe' alt='escape-room' />
         </a>
@@ -27,7 +29,7 @@ const ProjectSolo = props => {
             <i className='fab fa-github fa-2x' />
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
