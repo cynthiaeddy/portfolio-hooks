@@ -9,7 +9,6 @@ import simon2 from './assets/simon2.jpg'
 
 const data = [
   {
-    id: 0,
     img: `${james}`,
     link: 'https://jamesoseland.com',
     copy: [
@@ -25,7 +24,6 @@ const data = [
     backendLink: null,
   },
   {
-    id: 1,
     img: `${wint3}`,
     link: 'https://earth-paints.netlify.app',
     copy: [
@@ -43,7 +41,6 @@ const data = [
   },
 
   {
-    id: 2,
     img: `${whiteDoor1}`,
     link: 'https://white-door-escape.netlify.app',
     copy: [
@@ -55,7 +52,6 @@ const data = [
     backendLink: null,
   },
   {
-    id: 3,
     img: `${museum}`,
     link: 'https://brooklyn-museum.herokuapp.com',
     copy: [
@@ -68,7 +64,6 @@ const data = [
     backendLink: 'https://github.com/cynthiaeddy/brooklyn-art/tree/main/server',
   },
   {
-    id: 4,
     img: `${pets}`,
     link: 'https://adopt-a-pet.netlify.app',
     copy: [
@@ -85,7 +80,6 @@ const data = [
     backendLink: 'https://github.com/cynthiaeddy/brooklyn-art/tree/main/server',
   },
   {
-    id: 5,
     img: `${match_gamealt3}`,
     link: 'https://match-car-game.netlify.app',
     copy: [
@@ -101,7 +95,6 @@ const data = [
     backendLink: null,
   },
   {
-    id: 6,
     img: `${kayaksWh2}`,
     link: 'https://come-on-kayak.netlify.app',
     copy: [
@@ -117,7 +110,6 @@ const data = [
     backendLink: 'https://github.com/cynthiaeddy/kayaking-backend',
   },
   {
-    id: 7,
     img: `${simon2}`,
     link: 'https://colorpicksimon.netlify.app',
     copy: [

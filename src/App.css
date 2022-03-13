@@ -20,7 +20,7 @@ a {
   grid-template-columns: 0.75fr 1.25fr;
   grid-template-rows: 0.5fr 2.9fr 0.6fr;
   grid-auto-columns: 1fr;
-  gap: 0px 0px;
+  gap: 20px 20px;
   grid-auto-flow: row;
   grid-template-areas:
     'navbar navbar'
