@@ -20,7 +20,7 @@ const Logo = () => {
   }
 
   return (
-    <aside className='aside logo logo-container'>
+    <splash className='splash logo logo-container'>
       {isMobile ? (
         <img className='mobile' src={swirl_sm} alt='logo' />
       ) : (
@@ -32,7 +32,7 @@ const Logo = () => {
           onMouseLeave={() => setHover(false)}
         />
       )}
-    </aside>
+    </splash>
   )
 }
 

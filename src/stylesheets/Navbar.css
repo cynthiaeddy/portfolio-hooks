@@ -28,6 +28,7 @@ h2 {
   padding-top: 25px;
   margin-left: 5%;
   top: 0;
+  position: fixed;
 }
 
 #footer {
@@ -36,7 +37,8 @@ h2 {
   width: 100vw;
   bottom: 0;
   justify-content: center;
-  height: 80px;
+  height: 100px;
+  padding-top: 20px;
 }
 
 .small.fas,
@@ -80,8 +82,8 @@ h2 {
     top: unset;
     z-index: 25;
     background: #fff;
-    position: relative;
     margin-top: 20px;
+    position: relative;
   }
   .social {
     margin-top: 0;

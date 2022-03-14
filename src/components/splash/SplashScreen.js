@@ -23,7 +23,6 @@ const SplashScreen = () => {
     setWidth(window.innerWidth)
   }
 
-  return !timePassed ? <Splash /> : <Projects />
-  // return !timePassed && !isMobile ? <Splash /> : <Projects />
+  return !timePassed && !isMobile ? <Splash /> : <Projects />
 }
 export default SplashScreen
