@@ -11,20 +11,16 @@ const SplashScreen = () => {
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange)
     const timer = setTimeout(() => {
-      hasTimePassed()
-    }, 5000)
+      setTimePassed(true)
+    }, 5500)
     return () => {
-      clearTimeout(timer)
       window.removeEventListener('resize', handleWindowSizeChange)
+      clearTimeout(timer)
     }
   }, [])
 
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth)
-  }
-
-  const hasTimePassed = () => {
-    setTimePassed(true)
   }
 
   return !timePassed ? <Splash /> : <Projects />

@@ -1,5 +1,5 @@
-import data from '../data'
 import { Link } from 'react-router-dom'
+import data from '../data'
 import '../stylesheets/Projects.css'
 
 const Projects = () => {

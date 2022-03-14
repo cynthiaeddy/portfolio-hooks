@@ -24,6 +24,10 @@ h2 {
 #navbar {
   background: #fff;
   z-index: 100;
+  display: flex;
+  padding-top: 25px;
+  margin-left: 5%;
+  top: 0;
 }
 
 #footer {
@@ -52,17 +56,22 @@ h2 {
 
 /* //////// MEDIA QUERIES //////////// */
 
-@media (min-width: 768px) {
-  #navbar {
-    display: flex;
-    padding-top: 25px;
-    margin-left: 5%;
+@media (max-width: 768px) {
+  #navbar.navbar {
+    margin-left: 0;
+  }
+  #navbar ul {
+    padding-left: 0;
   }
 }
 
 @media (max-width: 600px) {
   #navbar {
     width: 100%;
+    padding-top: 0;
+  }
+  #navbar li {
+    line-height: 2;
   }
 
   #footer {
@@ -72,7 +81,6 @@ h2 {
     z-index: 25;
     background: #fff;
     position: relative;
-    height: 160px;
     margin-top: 20px;
   }
   .social {

@@ -58,17 +58,16 @@ a {
 
 .swirl {
   bottom: 0;
-  height: 100px;
   left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
   right: 0;
   top: -10vh;
+  margin: auto;
+  position: absolute;
+  height: 100px;
+  cursor: pointer;
 }
 
 .aside.logo {
-  cursor: pointer;
   position: fixed;
   width: 38vw;
   left: 0;
@@ -84,7 +83,9 @@ h3 {
   line-height: 1.6;
   margin-bottom: 0px;
 }
-
+ul {
+  margin-top: 0;
+}
 @media (max-width: 770px) {
   .container {
     position: fixed;
@@ -109,8 +110,11 @@ h3 {
     width: 100vw;
     z-index: 20;
     background: white;
-    top: 150px;
     height: 60px;
-    left: 40%;
+    left: 35%;
+    top: 15%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-10%, -50%);
   }
 }

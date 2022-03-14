@@ -25,24 +25,21 @@ h5:hover {
 
 @media (min-width: 1300px) {
   #me-container {
-    padding-right: 30vw;
+    width: 650px;
+    max-width: 70%;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1299px) {
-  .cards.cards-container#me-container {
-    margin-right: 5vw;
-  }
-  .image {
-    margin-left: 37vw;
-    margin-top: 50px;
-  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .image {
-    margin-left: 35vw;
     margin-top: 15px;
+  }
+  #me-container {
+    margin-left: 0;
+    width: 90%;
   }
 }
 

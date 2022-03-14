@@ -3,12 +3,19 @@
 }
 .cards.cards-container#me-container {
   grid-template-columns: 1fr;
+  /* gap: 0px; */
+
+  grid-template-rows: auto auto 0px;
+}
+.cards.cards-container#me-container .item:nth-child(3) {
+  visibility: hidden;
 }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
+  overflow: auto;
 }
 
 .card-backdrop {
@@ -16,9 +23,6 @@
   padding: 1.5rem;
   width: 90%;
   margin: auto;
-}
-.inner-card {
-  margin-top: 10px;
 }
 
 #indie-card {
@@ -33,14 +37,11 @@
   border: 1px solid grey;
 }
 .project-solo {
-  text-align: left;
-  letter-spacing: 1px;
   width: 100%;
   float: left;
-  vertical-align: top;
   margin-bottom: 1rem;
   cursor: pointer;
-  margin-top: -30px;
+  margin-top: -20px;
   margin-bottom: 20px;
 }
 
@@ -48,7 +49,7 @@
   width: 100%;
   height: 100%;
 }
-.project-card.doorescape {
+.project-card.whitedoorescape {
   border: 1px solid grey;
 }
 
@@ -89,9 +90,6 @@
 strong {
   font-weight: 600;
 }
-ul {
-  margin-top: 0;
-}
 
 /* ///////////MEDIA QUERIES/////////// */
 
@@ -107,11 +105,14 @@ ul {
 }
 @media (max-width: 1024px) {
   .cards {
-    width: 60%;
+    width: 80%;
     grid-template-columns: 1fr;
   }
-  .cards.cards-container {
-    margin-left: 20%;
+  .card-backdrop {
+    width: 75%;
+  }
+  #indie-card {
+    margin-left: 26vw;
   }
 }
 
@@ -122,7 +123,7 @@ ul {
   }
 
   .card-backdrop {
-    width: 95%;
+    width: 60%;
     height: fit-content;
     padding-bottom: 50px;
   }
@@ -135,15 +136,12 @@ ul {
     margin-left: 10%;
   }
 
-  .project-solo {
-    margin-top: -30px;
-  }
-
   #indie-card {
     width: inherit;
     grid-template-columns: 1fr;
     margin-top: 130px;
     margin-right: 10px;
+    margin-left: 18vw;
     position: fixed;
   }
 
@@ -164,15 +162,18 @@ ul {
 @media (max-width: 600px) {
   .cards.cards-container,
   .cards.cards-container#me-container {
-    margin: 0 10px;
-    margin-top: 252px;
-    height: 57vh;
+    margin: auto;
+    margin-top: 150px;
   }
   #indie-card {
     overflow-y: auto;
     position: relative;
     margin-left: 10px;
     width: 95%;
-    margin-top: 245px;
+    margin-top: 150px;
+  }
+
+  .card-backdrop {
+    width: 90%;
   }
 }

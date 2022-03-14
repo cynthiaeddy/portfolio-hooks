@@ -1,6 +1,6 @@
 import React from 'react'
-import data from '../data'
 import { useParams } from 'react-router'
+import data from '../data'
 
 const ProjectSolo = () => {
   const { title } = useParams()
