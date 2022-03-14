@@ -80,9 +80,8 @@ const data = [
         'Employs flexbox with a hamburger menu.',
       ],
     ],
-    frontendLink:
-      'https://github.com/cynthiaeddy/brooklyn-art/tree/main/client',
-    backendLink: 'https://github.com/cynthiaeddy/brooklyn-art/tree/main/server',
+    frontendLink: 'https://github.com/cynthiaeddy/petstoo_frontend',
+    backendLink: 'https://github.com/cynthiaeddy/petstoo_backend',
   },
   {
     img: `${match_gamealt3}`,
