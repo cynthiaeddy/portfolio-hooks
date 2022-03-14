@@ -122,7 +122,7 @@ const data = [
     link: 'https://colorpicksimon.netlify.app',
     copy: [
       'Color Pick Simon ',
-      'is variation of my childhood game.',
+      'is a variation of my childhood game.',
       [
         'Player vs Simon(computer). Simon picks one color, Player matches. Simon adds one color to each successful sequence.',
         'Player wins when color sequences match 10 times.',
