@@ -165,16 +165,19 @@ strong {
     margin-left: 10px;
     width: 95%;
     margin-top: 250px;
+    height: 95%;
   }
 
   .card-backdrop {
     width: 90%;
-    overflow-y: auto;
-    position: relative;
+    /* overflow-y: auto;
+    position: relative; */
     padding-bottom: 20px;
   }
   .inner-card {
-    overflow-y: auto;
-    position: relative;
+    padding-bottom: 20px;
+
+    /* overflow-y: auto;
+    position: relative; */
   }
 }

@@ -23,7 +23,9 @@ h5:hover {
 #me-container h3 {
   margin-top: 0;
 }
-
+.work {
+  overflow-y: scroll;
+}
 /* //////// MEDIA QUERIES //////////// */
 
 @media (min-width: 1300px) {
