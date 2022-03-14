@@ -20,6 +20,9 @@ h5:hover {
   height: 125px;
   justify-self: end;
 }
+#me-container h3 {
+  margin-top: 0;
+}
 
 /* //////// MEDIA QUERIES //////////// */
 
