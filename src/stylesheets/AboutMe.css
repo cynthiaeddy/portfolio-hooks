@@ -1,0 +1,57 @@
+h5 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline;
+  color: black;
+  text-align: left;
+  line-height: 2;
+}
+
+h5:hover {
+  color: grey;
+}
+
+.my-photo {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  justify-self: end;
+}
+
+/* //////// MEDIA QUERIES //////////// */
+
+@media (min-width: 1300px) {
+  #me-container {
+    padding-right: 30vw;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1299px) {
+  .cards.cards-container#me-container {
+    margin-right: 5vw;
+  }
+  .image {
+    margin-left: 37vw;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  .image {
+    margin-left: 35vw;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image {
+    margin: auto;
+  }
+  #me-container h3 {
+    margin-left: 12px;
+    margin-right: 5px;
+  }
+}

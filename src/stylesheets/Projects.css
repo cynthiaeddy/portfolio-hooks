@@ -1,22 +1,20 @@
 .cards.cards-container {
   margin-top: 0;
 }
+.cards.cards-container#me-container {
+  grid-template-columns: 1fr;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
-  overflow: auto;
 }
 
-.cards.cards-container#me-container {
-  grid-template-columns: 1fr;
-}
-.solo-card {
+.card-backdrop {
   background-color: #f7f7f2;
   padding: 1.5rem;
   width: 90%;
-  position: relative;
-  text-align: left;
   margin: auto;
 }
 .inner-card {
@@ -28,7 +26,6 @@
   margin-left: 35.5vw;
   width: 40rem;
   grid: none;
-  overflow: visible;
   position: absolute;
 }
 
@@ -89,15 +86,6 @@
   height: 100%;
 }
 
-h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 0px;
-}
-
 strong {
   font-weight: 600;
 }
@@ -133,7 +121,7 @@ ul {
     margin-bottom: -30px;
   }
 
-  .solo-card {
+  .card-backdrop {
     width: 95%;
     height: fit-content;
     padding-bottom: 50px;
@@ -154,7 +142,6 @@ ul {
   #indie-card {
     width: inherit;
     grid-template-columns: 1fr;
-    position: relative;
     margin-top: 130px;
     margin-right: 10px;
     position: fixed;

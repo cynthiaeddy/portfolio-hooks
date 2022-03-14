@@ -46,9 +46,8 @@ h2 {
   color: grey;
   background-color: white;
 }
-.social a {
-  margin-right: 10px;
-  margin-left: 10px;
+.small.fas.fa-envelope {
+  margin-right: 7px;
 }
 
 /* //////// MEDIA QUERIES //////////// */

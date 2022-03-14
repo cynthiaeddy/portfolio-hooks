@@ -35,7 +35,7 @@ const data = [
         'Implements Lazyload for faster rendering in mobile.',
         'Incorporates a searchbar where users can search by Country.',
         'React frontend styled with CSS and Semantic-ui-React.',
-        'Fetches data from the Rails API using Javascript.',
+        'Fetches data from the Rails API.',
       ],
     ],
     frontendLink: 'https://github.com/cynthiaeddy/google-earth-client',
@@ -44,7 +44,7 @@ const data = [
 
   {
     img: `${whiteDoor1}`,
-    title: 'doorescape',
+    title: 'whitedoorescape',
     link: 'https://white-door-escape.netlify.app',
     copy: [
       'The White Door Escape ',
@@ -60,13 +60,17 @@ const data = [
     link: 'https://brooklyn-museum.herokuapp.com',
     copy: [
       'The Brooklyn Museum Project ',
-      'is a simple escape game.',
-      'Built with React Hooks and CSS.',
+      "is an app where you can search the museum's vast collection by the artist's name.",
+      [
+        'Built with React Hooks and Express.',
+        "Chains 3 HTTP requests to fetch data from the Brooklyn Museum's API.",
+        'Incorporates a Masonry Grid library to mimic how traditional museums display their art.',
+      ],
     ],
-    frontendLink:
-      'https://github.com/cynthiaeddy/brooklyn-art/tree/main/client',
-    backendLink: 'https://github.com/cynthiaeddy/brooklyn-art/tree/main/server',
+    frontendLink: 'https://github.com/cynthiaeddy/brooklyn-art',
+    backendLink: null,
   },
+
   {
     img: `${pets}`,
     title: 'adoptapet',
@@ -109,7 +113,6 @@ const data = [
       [
         'Persists data to a Rails database and provides a Rails API.',
         'Displays a React, Redux frontend with Semantic-ui-React.',
-        'Fetches data from the Rails API using Javascript.',
       ],
     ],
     frontendLink: 'https://github.com/cynthiaeddy/kayaking_frontend',

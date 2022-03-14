@@ -1,7 +1,6 @@
 import React from 'react'
 import data from '../data'
 import { useParams } from 'react-router'
-import { Link } from 'react-router-dom'
 
 const ProjectSolo = () => {
   const { title } = useParams()
@@ -10,37 +9,37 @@ const ProjectSolo = () => {
   return (
     <>
       <section className='cards' id='indie-card'>
-        <div className='solo-card'>
+        <div className='card-backdrop'>
           {data
             .filter(project => project.title === title)
-            .map((project, idx) => {
+            .map((proj, idx) => {
               return (
                 <div className='inner-card' key={idx}>
-                  <a href={project.link}>
+                  <a href={proj.link}>
                     <img
-                      src={project.img}
+                      src={proj.img}
                       className='project-solo'
-                      alt={project.copy[0]}
+                      alt={proj.copy[0]}
                     />
                   </a>
                   <h3>
-                    <strong>{project.copy[0]}</strong>
-                    {project.copy[1]}
+                    <strong>{proj.copy[0]}</strong>
+                    {proj.copy[1]}
                     <ul>
-                      {project.copy[2].map(lines => {
-                        return <li>{lines}</li>
+                      {proj.copy[2].map((lines, idx) => {
+                        return <li key={idx}>{lines}</li>
                       })}
                     </ul>
                   </h3>
                   <div className='icons'>
-                    <a href={project.link}>
+                    <a href={proj.link}>
                       <i className='fas fa-play-circle fa-2x' />
                     </a>
-                    <a href={project.frontendLink}>
+                    <a href={proj.frontendLink}>
                       <i className='fab fa-github fa-2x' />
                     </a>
-                    {project.backendLink ? (
-                      <a href={project.backendLink}>
+                    {proj.backendLink ? (
+                      <a href={proj.backendLink}>
                         <i className='fab fa-github fa-2x' />
                       </a>
                     ) : null}
