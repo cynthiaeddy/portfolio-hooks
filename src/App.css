@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: fixed;
   overflow: hidden;
@@ -98,7 +98,7 @@ ul {
     justify-content: center;
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     /* below is to eliminate funky mobile safari space at bottom */
     padding-bottom: 1px;
