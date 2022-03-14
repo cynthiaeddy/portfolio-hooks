@@ -3,8 +3,6 @@
 }
 .cards.cards-container#me-container {
   grid-template-columns: 1fr;
-  /* gap: 0px; */
-
   grid-template-rows: auto auto 0px;
 }
 
@@ -30,7 +28,7 @@
   position: absolute;
 }
 
-.project-solo.escape {
+.project-solo.whitedoorescape {
   border: 1px solid grey;
 }
 .project-solo {
@@ -153,7 +151,6 @@ strong {
   .cards.cards-container#me-container {
     grid-template-columns: 1fr;
     position: relative;
-    margin: 0 10px;
   }
 }
 @media (max-width: 600px) {

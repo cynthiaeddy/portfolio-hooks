@@ -18,7 +18,7 @@ const ProjectSolo = () => {
                   <a href={proj.link}>
                     <img
                       src={proj.img}
-                      className='project-solo'
+                      className={`project-solo ${proj.title}`}
                       alt={proj.copy[0]}
                     />
                   </a>
