@@ -1,9 +1,6 @@
-footer a {
-  margin: 0;
-}
 h5 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: 700;
@@ -13,10 +10,6 @@ h5 {
   line-height: 2;
 }
 
-/* footer {
-  margin-left: 10px;
-} */
-
 h5:hover {
   color: grey;
 }
@@ -25,43 +18,33 @@ h5:hover {
   border-radius: 50%;
   width: 125px;
   height: 125px;
-  justify-self: end;
 }
-.image {
-  margin-left: 30vw;
-  margin-top: 45px;
+#me-container h3 {
+  margin-top: 0;
 }
-#me-container.cards {
-  gap: 0;
-}
-#me-container.cards.cards-container {
-  /* padding-right: 50px; */
-  max-width: 500px;
-  padding-right: 0;
+.my-links {
+  margin-top: 20px;
 }
 
 /* //////// MEDIA QUERIES //////////// */
 
 @media (min-width: 1300px) {
   #me-container {
-    padding-right: 30vw;
+    width: 650px;
+    max-width: 70%;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1299px) {
-  .cards.cards-container#me-container {
-    margin-right: 5vw;
-  }
-  .image {
-    margin-left: 37vw;
-    margin-top: 50px;
-  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .image {
-    margin-left: 35vw;
     margin-top: 15px;
+  }
+  #me-container {
+    margin-left: 0;
+    width: 90%;
   }
 }
 

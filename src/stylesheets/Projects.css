@@ -5,6 +5,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 0px;
 }
+.cards.cards-container#me-container {
+  grid-template-rows: none;
+}
 
 .cards {
   display: grid;
