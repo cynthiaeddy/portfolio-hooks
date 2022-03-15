@@ -41,7 +41,7 @@ h2 {
   height: 100px;
   padding-top: 20px;
   background: #fff;
-  z-index: 200;
+  z-index: 100;
 }
 
 .small.fas,
@@ -83,7 +83,7 @@ h2 {
     width: 100vw;
     bottom: 0;
     top: unset;
-    z-index: 25;
+    z-index: 100;
     background: #fff;
     position: relative;
     margin-top: 20px;
