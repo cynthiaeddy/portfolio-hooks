@@ -1,6 +1,6 @@
 import React from 'react'
 import linkedin2 from '../assets/linkedin2.jpg'
-import cynthiaeddy_resume from '../assets/cynthiaeddy_resume.pdf'
+import cynthia_eddy_resume from '../assets/cynthia_eddy_resume.pdf'
 import '../stylesheets/Projects.css'
 import '../stylesheets/AboutMe.css'
 
@@ -21,13 +21,13 @@ const AboutMe = () => {
         collaborating effectively across departments.
       </h3>
       <footer>
-        <a href={cynthiaeddy_resume}>
+        <a href={cynthia_eddy_resume}>
           <h5>view my resume | </h5>
         </a>
         <a href='http://www.cynthiaeddy.com'>
           <h5>view my print and digital portfolio | </h5>
         </a>
-        <a href={cynthiaeddy_resume} download>
+        <a href={cynthia_eddy_resume} download>
           <h5> download my resume</h5>
         </a>
       </footer>
