@@ -12,11 +12,16 @@ h5 {
   text-align: left;
   line-height: 2;
 }
-
-/* footer {
-  margin-left: 10px;
-} */
-
+#me-container.cards.cards-container {
+  grid-row: none;
+  margin-bottom: 300px;
+  margin-top: 100px;
+  padding-right: 0;
+}
+#me-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 h5:hover {
   color: grey;
 }
@@ -26,6 +31,7 @@ h5:hover {
   width: 125px;
   height: 125px;
   justify-self: end;
+  margin-bottom: 20px;
 }
 .image {
   margin-left: 30vw;
@@ -34,8 +40,7 @@ h5:hover {
 #me-container.cards {
   gap: 0;
 }
-#me-container.cards.cards-container {
-  /* padding-right: 50px; */
+#me-container {
   max-width: 500px;
   padding-right: 0;
 }
@@ -48,26 +53,38 @@ h5:hover {
   }
 }
 
-@media (min-width: 771px) and (max-width: 1299px) {
-  .cards.cards-container#me-container {
+/* @media (min-width: 771px) and (max-width: 1299px) {
+  #me-container.cards.cards-container {
     margin-right: 5vw;
+    margin-bottom: 175px;
   }
   .image {
     margin-left: 37vw;
     margin-top: 50px;
   }
+} */
+@media (min-width: 601px) and (max-width: 925px) {
+  #me-container.cards.cards-container {
+    margin-bottom: 200px;
+  }
 }
 
-@media (max-width: 770px) {
+/* @media (max-width: 770px) {
   .image {
     margin-left: 35vw;
     margin-top: 15px;
   }
-}
+  #me-container.cards.cards-container {
+    margin-bottom: 200px;
+  }
+} */
 
 @media (max-width: 600px) {
   .image {
     margin: auto;
+  }
+  #me-container.cards.cards-container {
+    margin-bottom: 0;
   }
   #me-container h3 {
     margin-left: 12px;

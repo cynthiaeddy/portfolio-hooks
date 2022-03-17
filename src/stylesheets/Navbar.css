@@ -21,7 +21,7 @@ h2 {
   color: grey;
 }
 
-#navbar {
+/* #navbar {
   background: #fff;
   z-index: 100;
   display: flex;
@@ -30,6 +30,22 @@ h2 {
   top: 0;
   position: fixed;
   width: 100vw;
+} */
+
+#navbar {
+  display: flex;
+  position: fixed;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  height: 130px;
+  background: #fff;
+  width: 70vw;
+  z-index: 100;
+  top: 0;
 }
 
 #footer {

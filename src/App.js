@@ -19,14 +19,16 @@ function App() {
     </Routes>
   )
   return (
-    <div className='container'>
+    <>
       <Router>
         <Navbar />
-        <Logo />
-        {routes}
+        <div className='container'>
+          <Logo />
+          {routes}
+          <Footer />
+        </div>
       </Router>
-      <Footer />
-    </div>
+    </>
   )
 }
 

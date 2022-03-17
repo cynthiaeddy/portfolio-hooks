@@ -13,12 +13,14 @@ const AboutMe = () => {
         exploration of mediums ranging from textiles and metalsmithing to
         designing for editorial publications, both print and digital. The common
         thread throughout these mediums is the fascination of making the
-        abstract tangible. <br /> <br />
-        As a Software Engineer, my focus is on exploring this medium of computer
-        programming - applying my creative and technical problem-solving skills,
-        as well as my tenacious spirit. Because of my previous work environment,
-        I'm adept at prioritizing key deliverables under tight deadlines and
-        collaborating effectively across departments.
+        abstract tangible.{' '}
+      </h3>
+      <h3>
+        As a Frontend Developer, I'm looking forward to applying my creative and
+        technical problem-solving skills, as well as my tenacious spirit.
+        Because of my previous work environment, I'm adept at prioritizing key
+        deliverables under tight deadlines and collaborating effectively across
+        departments.
       </h3>
       <footer>
         <a href={cynthiaeddy_resume}>
