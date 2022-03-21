@@ -12,16 +12,11 @@ h5 {
   text-align: left;
   line-height: 2;
 }
-#me-container.cards.cards-container h3 {
-  margin-top: -20%;
-}
 
 h5:hover {
   color: grey;
 }
-footer {
-  margin-top: -110px;
-}
+
 .my-photo {
   border-radius: 50%;
   width: 125px;
@@ -36,9 +31,9 @@ footer {
   gap: 0;
 }
 #me-container.cards.cards-container {
-  /* padding-right: 50px; */
   max-width: 500px;
   padding-right: 0;
+  height: 600px;
 }
 
 /* //////// MEDIA QUERIES //////////// */
@@ -58,17 +53,16 @@ footer {
     margin-top: 50px;
   }
 }
+@media (max-width: 900px) {
+  #me-container.cards.cards-container {
+    height: 700px;
+  }
+}
 
 @media (max-width: 770px) {
   .image {
     margin-left: 35vw;
     margin-top: 15px;
-  }
-  #me-container.cards.cards-container h3 {
-    margin-top: -10%;
-  }
-  footer {
-    margin-top: -60px;
   }
 }
 
@@ -80,8 +74,6 @@ footer {
   #me-container.cards.cards-container h3 {
     margin-left: 12px;
     margin-right: 5px;
-
-    margin-top: 10%;
   }
   footer {
     margin-left: 10px;
