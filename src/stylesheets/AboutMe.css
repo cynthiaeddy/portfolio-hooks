@@ -3,7 +3,7 @@ footer a {
 }
 h5 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: 700;
@@ -12,15 +12,16 @@ h5 {
   text-align: left;
   line-height: 2;
 }
-
-/* footer {
-  margin-left: 10px;
-} */
+#me-container.cards.cards-container h3 {
+  margin-top: -30%;
+}
 
 h5:hover {
   color: grey;
 }
-
+footer {
+  margin-top: 30px;
+}
 .my-photo {
   border-radius: 50%;
   width: 125px;
@@ -49,7 +50,7 @@ h5:hover {
 }
 
 @media (min-width: 771px) and (max-width: 1299px) {
-  .cards.cards-container#me-container {
+  #me-container.cards.cards-container {
     margin-right: 5vw;
   }
   .image {
@@ -63,15 +64,21 @@ h5:hover {
     margin-left: 35vw;
     margin-top: 15px;
   }
+  #me-container.cards.cards-container h3 {
+    margin-top: -10%;
+  }
 }
 
 @media (max-width: 600px) {
   .image {
     margin: auto;
   }
-  #me-container h3 {
+
+  #me-container.cards.cards-container h3 {
     margin-left: 12px;
     margin-right: 5px;
+
+    margin-top: 10%;
   }
   footer {
     margin-left: 10px;
