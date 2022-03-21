@@ -34,6 +34,7 @@ h5:hover {
   max-width: 500px;
   padding-right: 0;
   height: 600px;
+  overflow-x: hidden;
 }
 
 /* //////// MEDIA QUERIES //////////// */
