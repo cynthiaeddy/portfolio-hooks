@@ -19,18 +19,18 @@ const AboutMe = () => {
         as well as my tenacious spirit. Because of my previous work environment,
         I'm adept at prioritizing key deliverables under tight deadlines and
         collaborating effectively across departments.
-        <footer>
-          <a href={cynthia_eddy_resume}>
-            <h5>view my resume | </h5>
-          </a>
-          <a href='http://www.cynthiaeddy.com'>
-            <h5>view my print and digital portfolio | </h5>
-          </a>
-          <a href={cynthia_eddy_resume} download>
-            <h5> download my resume</h5>
-          </a>
-        </footer>
       </h3>
+      <footer>
+        <a href={cynthia_eddy_resume}>
+          <h5>view my resume | </h5>
+        </a>
+        <a href='http://www.cynthiaeddy.com'>
+          <h5>view my print and digital portfolio | </h5>
+        </a>
+        <a href={cynthia_eddy_resume} download>
+          <h5> download my resume</h5>
+        </a>
+      </footer>
     </div>
   )
 }

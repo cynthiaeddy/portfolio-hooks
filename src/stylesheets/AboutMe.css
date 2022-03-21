@@ -13,14 +13,14 @@ h5 {
   line-height: 2;
 }
 #me-container.cards.cards-container h3 {
-  margin-top: -30%;
+  margin-top: -20%;
 }
 
 h5:hover {
   color: grey;
 }
 footer {
-  margin-top: 30px;
+  margin-top: -110px;
 }
 .my-photo {
   border-radius: 50%;
@@ -66,6 +66,9 @@ footer {
   }
   #me-container.cards.cards-container h3 {
     margin-top: -10%;
+  }
+  footer {
+    margin-top: -60px;
   }
 }
 
