@@ -1,7 +1,10 @@
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import SplashScreen from './components/splash/SplashScreen'
 import Navbar from './components/Navbar'
+import NavbarMobile from './components/NavbarMobile'
+
 import Logo from './components/Logo'
 import Projects from './components/Projects'
 import ProjectSolo from './components/ProjectSolo'
@@ -9,6 +12,29 @@ import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState([])
+  const [width, setWidth] = useState(window.innerWidth)
+  let isMobile
+  width <= 600 ? (isMobile = true) : (isMobile = false)
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange)
+
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange)
+    }
+  }, [])
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth)
+  }
+
+  const menuOpenClickHandler = () => {
+    setIsMenuOpen(prevState => ({
+      isMenuOpen: !prevState.isMenuOpen,
+    }))
+  }
+
   let routes = (
     <Routes>
       <Route exact path='/' element={<SplashScreen />} />
@@ -21,7 +47,12 @@ function App() {
   return (
     <div className='container'>
       <Router>
-        <Navbar />
+        {!isMobile ? (
+          <Navbar />
+        ) : (
+          <NavbarMobile menuOpenClickHandler={menuOpenClickHandler} />
+        )}
+
         <Logo />
         {routes}
       </Router>

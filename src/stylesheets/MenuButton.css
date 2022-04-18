@@ -1,0 +1,49 @@
+.toggle.menu-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.topLine,
+.middleLine,
+.bottomLine {
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #000;
+}
+
+.topLine {
+  margin-top: -12px;
+}
+.middleLine {
+  margin-top: -6px;
+}
+.bottomLine {
+  margin-top: 0px;
+}
+.topLine.open {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+.middleLine.open {
+  background: transparent;
+}
+.bottomLine.open {
+  transform: rotate(-45deg);
+  margin-top: -5px;
+}
+
+/* ///////  MOBILE ////////// */
+
+@media (max-width: 600px) {
+  .toggle.menu-button {
+    padding-left: 2.5%;
+  }
+}
