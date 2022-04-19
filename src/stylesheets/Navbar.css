@@ -96,6 +96,7 @@ h2 {
     top: unset;
     z-index: 100;
     background: #fff;
+    position: relative;
   }
   .social {
     margin-top: 0;
