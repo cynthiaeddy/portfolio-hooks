@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../stylesheets/Menu.css'
-import './Navbar'
+import '../navbars/Navbar'
 
 const Menu = props => {
   console.log('in menu, props.isMenuOpen', props.isMenuOpen)

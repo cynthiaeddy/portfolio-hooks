@@ -4,8 +4,6 @@ import './App.css'
 import SplashScreen from './components/splash/SplashScreen'
 import Navbar from './components/navbars/Navbar'
 import NavbarMobile from './components/navbars/NavbarMobile'
-import Menu from './components/navbars/Menu'
-
 import Logo from './components/Logo'
 import Projects from './components/Projects'
 import ProjectSolo from './components/ProjectSolo'
@@ -13,7 +11,6 @@ import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
   let isMobile
   width <= 600 ? (isMobile = true) : (isMobile = false)
@@ -30,13 +27,6 @@ function App() {
     setWidth(window.innerWidth)
   }
 
-  const menuOpenClickHandler = () => {
-    setIsMenuOpen(prevState => ({
-      isMenuOpen: !prevState.isMenuOpen,
-    }))
-    console.log('in menu open click handler')
-  }
-
   let routes = (
     <Routes>
       <Route exact path='/' element={<SplashScreen />} />
@@ -49,15 +39,7 @@ function App() {
   return (
     <div className='container'>
       <Router>
-        {!isMobile ? (
-          <Navbar />
-        ) : (
-          <NavbarMobile
-            menuOpenClickHandler={menuOpenClickHandler}
-            isMenuOpen={isMenuOpen}
-          />
-        )}
-        <Menu isMenuOpen={isMenuOpen} />
+        {!isMobile ? <Navbar /> : <NavbarMobile />}
 
         <Logo />
         {routes}
@@ -68,8 +50,3 @@ function App() {
 }
 
 export default App
-
-{
-  /* <Navbar menuOpenClickHandler={menuOpenClickHandler} show={isMenuOpen} />
-<Menu isMenuOpen={isMenuOpen} /> */
-}

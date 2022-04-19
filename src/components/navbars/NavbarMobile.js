@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import '../../stylesheets/Navbar.css'
 import MenuButton from './MenuButton'
 
@@ -18,10 +19,14 @@ const NavbarMobile = props => {
         </div>
         <ul>
           <li>
-            <h2>projects </h2>
+            <h2>
+              <NavLink to='/projects'>Projects</NavLink>
+            </h2>
           </li>
           <li>
-            <h2>about me</h2>
+            <h2>
+              <NavLink to='/about-me'>About Me</NavLink>
+            </h2>
           </li>
         </ul>
       </nav>

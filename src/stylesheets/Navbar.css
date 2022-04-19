@@ -13,7 +13,8 @@ h2 {
   display: inline-block;
 }
 
-#navbar a {
+#navbar a,
+#navbar-mobile a {
   color: black;
 }
 #navbar a:focus {
