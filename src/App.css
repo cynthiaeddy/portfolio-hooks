@@ -112,7 +112,7 @@ ul {
     background: white;
     height: 60px;
     left: 35%;
-    top: 160px;
+    top: 100px;
 
     /* bring your own prefixes */
     transform: translate(0%, -50%);

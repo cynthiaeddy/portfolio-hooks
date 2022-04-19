@@ -4,8 +4,12 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding-top: 10px;
-  padding-left: 20px;
+  position: absolute;
+
+  left: 50%;
+
+  transform: translate(-50%);
+  top: 10%;
 }
 
 .topLine,
@@ -38,12 +42,4 @@
 .bottomLine.open {
   transform: rotate(-45deg);
   margin-top: -5px;
-}
-
-/* ///////  MOBILE ////////// */
-
-@media (max-width: 600px) {
-  .toggle.menu-button {
-    padding-left: 2.5%;
-  }
 }

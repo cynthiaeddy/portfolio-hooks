@@ -9,15 +9,19 @@ const NavbarMobile = props => {
   console.log(props)
 
   return (
-    <nav className='Search-nav'>
+    <nav id='navbar-mobile'>
       <MenuButton
         click={props.menuOpenClickHandler}
         isMenuOpenShow={props.show}
       />
 
-      <ul className='Search-nav-words'>
-        <li>projects </li>
-        <li>about me</li>
+      <ul className='navbar-mobile_li'>
+        <li>
+          <h2>projects </h2>
+        </li>
+        <li>
+          <h2>about me</h2>
+        </li>
       </ul>
     </nav>
   )
