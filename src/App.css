@@ -111,8 +111,8 @@ ul {
     z-index: 20;
     background: white;
     height: 60px;
-    left: 35%;
-    top: 100px;
+    left: 38%;
+    top: 120px;
 
     /* bring your own prefixes */
     transform: translate(0%, -50%);

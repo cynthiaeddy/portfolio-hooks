@@ -1,45 +1,18 @@
-.toggle.menu-button {
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-
-  left: 50%;
-
-  transform: translate(-50%);
-  top: 10%;
+.menu-button {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  margin-top: 40px;
 }
-
-.topLine,
-.middleLine,
-.bottomLine {
-  width: 25px;
-  height: 2px;
-  position: absolute;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #000;
-}
-
-.topLine {
-  margin-top: -12px;
-}
-.middleLine {
-  margin-top: -6px;
-}
-.bottomLine {
-  margin-top: 0px;
-}
-.topLine.open {
-  transform: rotate(45deg);
-  margin-top: -5px;
-}
-.middleLine.open {
-  background: transparent;
-}
-.bottomLine.open {
-  transform: rotate(-45deg);
-  margin-top: -5px;
+.line {
+  width: 2rem;
+  height: 0.15rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform-origin: 1px;
+  transition: all 0.3s linear;
 }

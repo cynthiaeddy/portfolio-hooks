@@ -160,7 +160,7 @@ strong {
   .cards.cards-container,
   .cards.cards-container#me-container {
     margin: auto;
-    margin-top: 250px;
+    margin-top: 200px;
   }
   #indie-card {
     overflow-y: auto;

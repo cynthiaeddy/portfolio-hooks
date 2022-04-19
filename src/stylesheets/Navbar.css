@@ -37,10 +37,7 @@ h2 {
   width: 100vw;
 }
 #navbar-mobile {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  background: white;
+  position: fixed;
   margin-bottom: 20px;
   z-index: 100;
   top: 0;
@@ -53,7 +50,6 @@ h2 {
   margin: 0;
   margin: auto;
   text-align: center;
-  margin-top: 60px;
 }
 
 #footer {

@@ -4,7 +4,6 @@ import data from '../data'
 
 const ProjectSolo = () => {
   const { title } = useParams()
-  console.log(title)
 
   return (
     <>

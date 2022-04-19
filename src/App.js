@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import SplashScreen from './components/splash/SplashScreen'
-import Navbar from './components/Navbar'
-import NavbarMobile from './components/NavbarMobile'
+import Navbar from './components/navbars/Navbar'
+import NavbarMobile from './components/navbars/NavbarMobile'
+import Menu from './components/navbars/Menu'
 
 import Logo from './components/Logo'
 import Projects from './components/Projects'
@@ -12,7 +13,7 @@ import AboutMe from './components/AboutMe'
 import Footer from './components/Footer'
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState([])
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
   let isMobile
   width <= 600 ? (isMobile = true) : (isMobile = false)
@@ -33,6 +34,7 @@ function App() {
     setIsMenuOpen(prevState => ({
       isMenuOpen: !prevState.isMenuOpen,
     }))
+    console.log('in menu open click handler')
   }
 
   let routes = (
@@ -50,8 +52,12 @@ function App() {
         {!isMobile ? (
           <Navbar />
         ) : (
-          <NavbarMobile menuOpenClickHandler={menuOpenClickHandler} />
+          <NavbarMobile
+            menuOpenClickHandler={menuOpenClickHandler}
+            isMenuOpen={isMenuOpen}
+          />
         )}
+        <Menu isMenuOpen={isMenuOpen} />
 
         <Logo />
         {routes}
@@ -62,3 +68,8 @@ function App() {
 }
 
 export default App
+
+{
+  /* <Navbar menuOpenClickHandler={menuOpenClickHandler} show={isMenuOpen} />
+<Menu isMenuOpen={isMenuOpen} /> */
+}

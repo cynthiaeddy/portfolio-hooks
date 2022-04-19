@@ -1,5 +1,5 @@
 .menu {
-  height: 100%;
+  height: 200px;
   position: fixed;
   top: 40px;
   left: 0;
@@ -9,7 +9,7 @@
   transition: transform 0.3s ease-out;
   z-index: 20;
   transition: transform 0.3s ease-out;
-  width: 300px;
+  width: 100vw;
   background: white;
   border-right: 1px solid grey;
 }
@@ -46,8 +46,8 @@
 }
 
 /* ///////  MOBILE ////////// */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .menu {
     width: 50%;
   }
-}
+} */
