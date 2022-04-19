@@ -92,14 +92,6 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  #navbar {
-    width: 100%;
-    padding-top: 0;
-  }
-  #navbar li {
-    line-height: 2;
-  }
-
   #footer {
     width: 100vw;
     bottom: 0;
